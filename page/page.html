@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <!-- Шапка -->
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../header/media/media-header.css">
+    <!-- Главный блок -->
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="../main/media/media-main.css">
+    <!-- Левая навигация -->
+    <link rel="stylesheet" href="../main/navigator/navigator.css">
+    <link rel="stylesheet" href="../main/media/navigator/media-navigator.css">
+    <!-- Глваное окно -->
+    <link rel="stylesheet" href="../main/content/content.css">
+    <link rel="stylesheet" href="../main/media/content/media-content.css">
+    <link rel="stylesheet" href="../main/content/content-title.css">
+    <link rel="stylesheet" href="../main/media/content/media-content-title.css">
+    <link rel="stylesheet" href="../main/content/content-form.css">
+    <link rel="stylesheet" href="../main/media/content/media-content-form.css">
+    <!-- Выпадающие окна -->
+    <link rel="stylesheet" href="../main/content/dropdownMenu/dropdownMenu.css">
+    <!-- Моальное окно -->
+    <link rel="stylesheet" href="../main/content/modalWindow/modal-window.css">
+    <link rel="stylesheet" href="../main/content/modalWindow/modal__content-title.css">
+    <link rel="stylesheet" href="../main/content/modalWindow/modal__content-form.css">
+    <link rel="stylesheet" href="../main/content/modalWindow/media/media-modal-window.css">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Шапка -->
+        <div class="header__panel">
+            <img class="header__logo" src="../img/Logo.svg" alt="logo">
+            <button class="button__navigator-menu-header">
+                <img src="../img/Navigator-menu.svg" alt="menu">
+            </button>
+            <div class="header__menu">
+                <div class="menu-serach">
+                    <input type="text" class="search" placeholder="Поиск">
+                    <img src="../img/Search.svg">
+                </div>
+                <div class="menu-profile">
+                    <img class="profile-img" src="../img/Avatar.png" alt="avatar">
+                    <a href="" class="profile-link">Максим Галактинов</a>
+                </div>
+                <div class="menu-setting">
+                    <button class="button__setting">
+                        <img src="../img/Setting.svg" alt="setting">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="/header/fix-header.js"></script>
+    <main>
+        <!-- Навигация слева -->
+        <div class="navigator">
+            <div class="navigator__tabs">
+                <button class="button__navigator-menu">
+                    <img src="../img/Navigator-menu.svg" alt="menu">
+                </button>
+                <button class="button__navigator-elect">
+                    <img src="../img/Navigator-elect.svg" alt="elect">
+                </button>
+            </div>
+            <div class="navigator__list">
+                <div class="list-filter">
+                    <div class="filter-search">
+                        <input type="text" class="search-menu" placeholder="Поиск по меню">
+                        <img src="../img/Filter.svg" alt="filter" class="filter-search-img">
+                    </div>
+                    <button class="button__fasten">
+                        <img src="../img/Fasten.svg" alt="fasten" class="button__fasten-img">
+                    </button>
+                </div>
+                <div class="list-navigator" id="listNavigator">
+                    <script src="../main/navigator/listNavigator.js"></script>
+                </div>
+            </div>
+        </div>
+        <!-- Главное окно -->
+        <div class="content">
+            <div class="content__title">
+                <div class="title-left">
+                    <h1>Подзадача</h1>
+                    <button class="button__create" id="button__create">Создать</button>
+                </div>
+
+                <script src="/main/content/modalWindow/modalWindow.js"></script>
+
+                <div class="title-right">
+                    <button class="button__save">Сохранить</button>
+                    <button class="button__save-exit">Сохранить и выйти</button>
+                </div>
+            </div>
+            <div class="content__form">
+                <h1>STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller</h1>
+                <!-- Input -->
+                <div class="form-window">
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <img src="../img/Asterik.svg" alt="asterik" class="asterik-img">
+                                <p>Тема</p>
+                            </div>
+                            <div class="input-place">
+                                <input type="text" class="split-input" placeholder="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller" required>
+                            </div>
+                        </div>
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Статус</p>
+                            </div>
+                            <div class="input-place">
+                                <input type="text" class="split-input" placeholder="Новая">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Описание</p>
+                            </div>
+                            <div class="input-place">
+                                <input type="text" class="split-input">
+                            </div>
+                        </div>
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Продукт</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <input type="text" class="split-input" placeholder="Platform">
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <img src="../img/Asterik.svg" alt="asterik" class="asterik-img">
+                                <p>Рабочие заметки</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <input type="text" class="split-input" placeholder="Проверить ACL id=172830402014193655">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Приоритет</p>
+                            </div>
+                            <div class="input-place">
+                                <input type="text" class="split-input" placeholder="Средний">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Ответственный</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <div id="selectedNameBlock" class="selected-name-block"></div>
+                                    <input type="text" class="split-input" id="nameInput">
+                                    <button class="button__form-delete" onclick="clearInputName()">
+                                        <img src="../img/FormDelete.svg" alt="delete">
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="button__form-add" onclick="toggleDropdownName()">
+                                        <img src="../img/FormAdd.svg" alt="add">
+                                    </button>
+                                    <ul class="dropdown-menu-responsible" id="dropdownMenuResponsible">
+                                        <li onclick="selectName('Иван Иванов')">Иван Иванов</li>
+                                        <li onclick="selectName('Мария Петрова')">Мария Петрова</li>
+                                        <li onclick="selectName('Анна Смирнова')">Анна Смирнова</li>
+                                    </ul>
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Группа</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <div id="selectedGroupBlock" class="selected-group-block"></div>
+                                    <input type="text" class="split-input" id="groupInput" oninput="highlightText('group')">
+                                    <button class="button__form-delete" onclick="clearInputGroup()">
+                                        <img src="../img/FormDelete.svg" alt="delete">
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="button__form-add" onclick="toggleDropdownGroup()">
+                                        <img src="../img/FormAdd.svg" alt="add">
+                                    </button>
+                                    <ul class="dropdown-menu-group" id="dropdownMenuGroup">
+                                        <li onclick="selectGroup('Support Group')">Support Group</li>
+                                        <li onclick="selectGroup('Main Group')">Main Group</li>
+                                        <li onclick="selectGroup('Second Group')">Second Group</li>
+                                    </ul>
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <script src="../main/content/dropdownMenu/dropdownMenuResponsible.js"></script>
+                        <script src="../main/content/dropdownMenu/dropdownMenuGroup.js"></script>
+
+                    </div>
+                    <div class="line">
+                        <div class="split-name">
+                            <p>Комментарии</p>
+                        </div>
+                        <div class="input-place">
+                            <input type="text" class="split-input">
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="split-consenting">
+                            <div class="split-name">
+                                <p>Согласующие</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <div id="consentingContainer" class="consenting-container">
+                                        <input type="text" class="split-input" id="consentingInput" oninput="highlightText('consenting')">
+                                    </div>
+                                    <button class="button__form-delete" onclick="clearInputConsenting()">
+                                        <img src="../img/FormDelete.svg" alt="delete">
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="button__form-add" onclick="toggleDropdownConsenting()">
+                                        <img src="../img/FormAdd.svg" alt="add">
+                                    </button>
+                                    <ul class="dropdown-menu-consenting" id="dropdownMenuСonsenting">
+                                        <li onclick="selectСonsenting('Михаил Макаров')">Михаил Макаров</li>
+                                        <li onclick="selectСonsenting('Данил Уприванов Александрович')">Данил Уприванов Александрович</li>
+                                        <li onclick="selectСonsenting('Андрей Аношин')">Андрей Аношин</li>
+                                        <li onclick="selectСonsenting('Дарья Спиридонова')">Дарья Спиридонова</li>
+                                        <li onclick="selectСonsenting('Викотрия Волкова')">Викотрия Волкова</li>
+                                        <li onclick="selectСonsenting('Никита Крылов')">Никита Крылов</li>
+                                    </ul>
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>      
+
+                        <script src="../main/content/dropdownMenu/dropdownMenuConsenting.js"></script>
+
+                    </div>
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Когда открыто</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <input type="text" class="split-input">
+                                </div>
+                                <button class="button__form-calendar">
+                                    <img src="../img/Calendar.svg" alt="calendar">
+                                </button>
+
+                                <div id="calendarContainer" class="calendar-container" style="display: none;"></div>
+                            </div>                            
+                        </div>
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Когда создано</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <input type="text" class="split-input">
+                                </div>
+                                <button class="button__form-calendar">
+                                    <img src="../img/Calendar.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="line">
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Кем открыто</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <div id="selectedWhoOpenlyBlock" class="selected-whoOpenly-block"></div>
+                                    <input type="text" class="split-input" id="whoOpenlyInput" oninput="highlightText('whoOpenly')">
+                                    <button class="button__form-delete" onclick="clearInputWhoOpenly()">
+                                        <img src="../img/FormDelete.svg" alt="delete">
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="button__form-add" onclick="toggleDropdownWhoOpenly()">
+                                        <img src="../img/FormAdd.svg" alt="add">
+                                    </button>
+                                    <ul class="dropdown-menu-whoOpenly" id="dropdownMenuWhoOpenly">
+                                        <li onclick="selectWhoOpenly('Кирилл Макеев')">Кирилл Макеев</li>
+                                        <li onclick="selectWhoOpenly('Олег Подмарков')">Олег Подмарков</li>
+                                        <li onclick="selectWhoOpenly('Данил Павлов')">Данил Павлов</li>
+                                    </ul>
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+
+                        <script src="/main/content/dropdownMenu/dropdownMenuWhoOpenly.js"></script>
+                        
+                        <div class="split">
+                            <div class="split-name">
+                                <p>Кем создано</p>
+                            </div>
+                            <div class="split__input-button">
+                                <div class="input-place">
+                                    <div id="selectedWhoCreatedBlock" class="selected-whoCreated-block"></div>
+                                    <input type="text" class="split-input" id="whoCreatedInput" oninput="highlightText('whoCreated')">
+                                    <button class="button__form-delete" onclick="clearInputWhoCreated()">
+                                        <img src="../img/FormDelete.svg" alt="delete">
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="button__form-add" onclick="toggleDropdownWhoCreated()">
+                                        <img src="../img/FormAdd.svg" alt="add">
+                                    </button>
+                                    <ul class="dropdown-menu-whoCreated" id="dropdownMenuWhoCreated">
+                                        <li onclick="selectWhoCreated('Елена Богатыерва')">Елена Богатыерва</li>
+                                        <li onclick="selectWhoCreated('Ксения Аллянова')">Ксения Аллянова</li>
+                                        <li onclick="selectWhoCreated('Антов Осипов')">Антов Осипов</li>
+                                    </ul>
+                                </div>
+                                <button class="button__form-search">
+                                    <img src="../img/FromSearch.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+
+                        <script src="/main/content/dropdownMenu/dropdownMenuWhoCreated.js"></script>
+
+                    </div>    
+                </div>
+            </div>
+            <!-- Модальное окно -->
+            <div class="modal" id="modal">
+                <div class="modal__content">
+                    <div class="modal__content-title">
+                        <div class="modal__title-left">
+                            <h1>Подзадача</h1>
+                        </div>
+                        <div class="modal__title-right">
+                            <button class="button__save">Сохранить</button>
+                            <button class="button__save-exit" id="button__save-exit">Отменить</button>
+                        </div>
+                        <button class="button__exit" id="button__exit">
+                            <img src="/img/Exit.svg" alt="exit">
+                        </button>
+                    </div>
+                    <div class="content__form">
+                        <h1>Новая запись</h1>
+                        <!-- Input -->
+                        <div class="form-window">
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <img src="../img/Asterik.svg" alt="asterik" class="asterik-img">
+                                        <p>Тема</p>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" class="split-input" placeholder="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller" required>
+                                    </div>
+                                </div>
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Статус</p>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" class="split-input" placeholder="Новая">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Описание</p>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" class="split-input">
+                                    </div>
+                                </div>
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Продукт</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <input type="text" class="split-input" placeholder="Platform">
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <img src="../img/Asterik.svg" alt="asterik" class="asterik-img">
+                                        <p>Рабочие заметки</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <input type="text" class="split-input" placeholder="Проверить ACL id=172830402014193655">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Приоритет</p>
+                                    </div>
+                                    <div class="input-place">
+                                        <input type="text" class="split-input" placeholder="Средний">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Ответственный</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <div id="modal__selectedNameBlock" class="selected-name-block"></div>
+                                            <input type="text" class="split-input" id="modal__nameInput">
+                                            <button class="button__form-delete" onclick="modal__clearInputName()">
+                                                <img src="../img/FormDelete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="button__form-add" onclick="modal__toggleDropdownName()">
+                                                <img src="../img/FormAdd.svg" alt="add">
+                                            </button>
+                                            <ul class="dropdown-menu-responsible" id="modal__dropdownMenuResponsible">
+                                                <li onclick="modal__selectName('Иван Иванов')">Иван Иванов</li>
+                                                <li onclick="modal__selectName('Мария Петрова')">Мария Петрова</li>
+                                                <li onclick="modal__selectName('Анна Смирнова')">Анна Смирнова</li>
+                                            </ul>
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Группа</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <div id="modal__selectedGroupBlock" class="selected-group-block"></div>
+                                            <input type="text" class="split-input" id="modal__groupInput" oninput="modal__highlightText('modal__group')">
+                                            <button class="button__form-delete" onclick="modal__clearInputGroup()">
+                                                <img src="../img/FormDelete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="button__form-add" onclick="modal__toggleDropdownGroup()">
+                                                <img src="../img/FormAdd.svg" alt="add">
+                                            </button>
+                                            <ul class="dropdown-menu-group" id="modal__dropdownMenuGroup">
+                                                <li onclick="modal__selectGroup('Support Group')">Support Group</li>
+                                                <li onclick="modal__selectGroup('Main Group')">Main Group</li>
+                                                <li onclick="modal__selectGroup('Second Group')">Second Group</li>
+                                            </ul>
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <script src="../main/content/modalWindow/modal__dropdownMenu/modal__dropdownMenuResponsible.js"></script>
+                                <script src="../main/content/modalWindow/modal__dropdownMenu/modal__dropdownMenuGroup.js"></script>
+        
+                            </div>
+                            <div class="modal__line">
+                                <div class="split-name">
+                                    <p>Комментарии</p>
+                                </div>
+                                <div class="input-place">
+                                    <input type="text" class="split-input">
+                                </div>
+                            </div>
+                            <div class="modal__line">
+                                <div class="split-consenting">
+                                    <div class="split-name">
+                                        <p>Согласующие</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <div id="modal__consentingContainer" class="consenting-container">
+                                                <input type="text" class="split-input" id="modal__consentingInput" oninput="modal__highlightText('modal__consenting')">
+                                            </div>
+                                            <button class="button__form-delete" onclick="modal__clearInputConsenting()">
+                                                <img src="../img/FormDelete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="button__form-add" onclick="modal__toggleDropdownConsenting()">
+                                                <img src="../img/FormAdd.svg" alt="add">
+                                            </button>
+                                            <ul class="dropdown-menu-consenting" id="modal__dropdownMenuСonsenting">
+                                                <li onclick="modal__selectСonsenting('Михаил Макаров')">Михаил Макаров</li>
+                                                <li onclick="modal__selectСonsenting('Данил Уприванов Александрович')">Данил Уприванов Александрович</li>
+                                                <li onclick="modal__selectСonsenting('Андрей Аношин')">Андрей Аношин</li>
+                                                <li onclick="modal__selectСonsenting('Дарья Спиридонова')">Дарья Спиридонова</li>
+                                                <li onclick="modal__selectСonsenting('Викотрия Волкова')">Викотрия Волкова</li>
+                                                <li onclick="modal__selectСonsenting('Никита Крылов')">Никита Крылов</li>
+                                            </ul>
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>      
+                            </div>
+        
+                            <script src="../main/content/modalWindow/modal__dropdownMenu/modal__dropdownMenuСonsenting.js"></script>
+                                
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Когда открыто</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <input type="text" class="split-input">
+                                        </div>
+                                        <button class="button__form-calendar">
+                                            <img src="../img/Calendar.svg" alt="calendar">
+                                        </button>
+        
+                                        <div id="calendarContainer" class="calendar-container" style="display: none;"></div>        
+                                    </div>                            
+                                </div>
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Когда создано</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <input type="text" class="split-input">
+                                        </div>
+                                        <button class="button__form-calendar">
+                                            <img src="../img/Calendar.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>            
+                            <div class="modal__line">
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Кем открыто</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <div id="modal__selectedWhoOpenlyBlock" class="selected-whoOpenly-block"></div>
+                                            <input type="text" class="split-input" id="modal__whoOpenlyInput" oninput="modal__highlightText('modal__whoOpenly')">
+                                            <button class="button__form-delete" onclick="modal__clearInputWhoOpenly()">
+                                                <img src="../img/FormDelete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="button__form-add" onclick="modal__toggleDropdownWhoOpenly()">
+                                                <img src="../img/FormAdd.svg" alt="add">
+                                            </button>
+                                            <ul class="dropdown-menu-whoOpenly" id="modal__dropdownMenuWhoOpenly">
+                                                <li onclick="modal__selectWhoOpenly('Кирилл Макеев')">Кирилл Макеев</li>
+                                                <li onclick="modal__selectWhoOpenly('Олег Подмарков')">Олег Подмарков</li>
+                                                <li onclick="modal__selectWhoOpenly('Данил Павлов')">Данил Павлов</li>
+                                            </ul>
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+        
+                                <script src="/main/content/modalWindow/modal__dropdownMenu/modal__dropdownMenuWhoOpenly.js"></script>
+                                
+                                <div class="modal__split">
+                                    <div class="split-name">
+                                        <p>Кем создано</p>
+                                    </div>
+                                    <div class="split__input-button">
+                                        <div class="input-place">
+                                            <div id="modal__selectedWhoCreatedBlock" class="selected-whoCreated-block"></div>
+                                            <input type="text" class="split-input" id="modal__whoCreatedInput" oninput="modal__highlightText('modal__whoCreated')">
+                                            <button class="button__form-delete" onclick="modal__clearInputWhoCreated()">
+                                                <img src="../img/FormDelete.svg" alt="delete">
+                                            </button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="button__form-add" onclick="modal__toggleDropdownWhoCreated()">
+                                                <img src="../img/FormAdd.svg" alt="add">
+                                            </button>
+                                            <ul class="dropdown-menu-whoCreated" id="modal__dropdownMenuWhoCreated">
+                                                <li onclick="modal__selectWhoCreated('Елена Богатыерва')">Елена Богатыерва</li>
+                                                <li onclick="modal__selectWhoCreated('Ксения Аллянова')">Ксения Аллянова</li>
+                                                <li onclick="modal__selectWhoCreated('Антов Осипов')">Антов Осипов</li>
+                                            </ul>
+                                        </div>
+                                        <button class="button__form-search">
+                                            <img src="../img/FromSearch.svg" alt="search">
+                                        </button>
+                                    </div>
+                                </div>
+        
+                                <script src="/main/content/modalWindow/modal__dropdownMenu/modal__dropdownMenuWhoCreated.js"></script>
+        
+                            </div>    
+                        </div>
+                        <div class="modal__below-button">
+                            <button class="button__below-save">Сохранить</button>
+                            <button class="button__below-cancel" id="button__below-cancel">Отменить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

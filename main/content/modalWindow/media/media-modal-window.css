@@ -1,0 +1,21 @@
+@media(max-width: 991px){
+    .modal__content{
+        width: 450px;
+    }
+}
+@media(max-width: 767px){
+    .modal__content{
+        width: 95%;
+        min-height: 100vh;
+        margin: 0px;
+    }
+    .modal__title-right{
+        display: none;
+    }
+    .button__exit{
+        display: block;
+    }
+    .modal__below-button{
+        display: flex;
+    }
+}

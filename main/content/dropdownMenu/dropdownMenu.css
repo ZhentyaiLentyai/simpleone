@@ -1,0 +1,45 @@
+.dropdown-menu-responsible,
+.dropdown-menu-group,
+.dropdown-menu-consenting,
+.dropdown-menu-whoOpenly,
+.dropdown-menu-whoCreated {
+    display: none;
+    position: absolute;
+    margin-top: 8px;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #D5D8DD;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: auto;
+    max-width: 150px;
+}
+
+.dropdown-menu-responsible li,
+.dropdown-menu-group li,
+.dropdown-menu-consenting li,
+.dropdown-menu-whoOpenly li,
+.dropdown-menu-whoCreated li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu-responsible li:hover,
+.dropdown-menu-group li:hover,
+.dropdown-menu-consenting li:hover,
+.dropdown-menu-whoOpenly li:hover,
+.dropdown-menu-whoCreated li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu-responsible.show,
+.dropdown-menu-group.show,
+.dropdown-menu-consenting.show,
+.dropdown-menu-whoOpenly.show,
+.dropdown-menu-whoCreated.show {
+    display: block;
+}

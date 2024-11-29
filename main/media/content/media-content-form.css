@@ -1,0 +1,41 @@
+@media(max-width: 1920px){
+    .split{
+        flex: none;
+        width: 408px;
+    }
+}
+
+@media(max-width: 1200px){
+    .line{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .split{
+        flex: none;
+        width: 100%;
+        margin-bottom: 16px;
+        padding-top: 2px;
+    }
+}
+
+@media(max-width: 991px){
+    .content__form h1{
+        font-size: 20px;
+    }
+    .split{
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .split{
+        flex: none;
+        width: 100%;
+    }
+    .selected-consenting-item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+}

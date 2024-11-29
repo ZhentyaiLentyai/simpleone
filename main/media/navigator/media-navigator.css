@@ -1,0 +1,11 @@
+@media(max-width: 1200px){
+    .navigator__list{
+        display: none;
+    }
+}
+
+@media(max-width: 991px){
+    .navigator__tabs{
+        display: none;
+    }
+}
